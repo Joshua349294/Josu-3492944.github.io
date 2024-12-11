@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        /* Contenedor del contenido del blog */
+        .content-container {
+            max-width: 800px;
+            width: 100%;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        /* Título del blog */
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            color: #2c3e50;
+            animation: slideIn 1s ease-out;
+        }
+
+        /* Artículo */
+        .post {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .post h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #3498db;
+            text-transform: capitalize;
+        }
+
+        .post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #7f8c8d;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Estilo para el botón de volver */
+        .back-btn {
+            margin-top: 3rem;
+            text-decoration: none;
+            background-color: #3498db;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .back-btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mi Blog</h1>
+
+    <div class="content-container">
+        <div class="post">
+            <h2>Mi primer artículo</h2>
+            <p>informacion</p>
+        </div>
+
+        <div class="post">
+            <h2>Segundo Articulo</h2>
+            <p>informacion</p>
+        </div>
+
+        <a href="index.html" class="back-btn">Volver a la página principal</a>
+    </div>
+
+</body>
+</html>
